@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Import the other components
@@ -9,15 +9,22 @@ import CreateResume from "./components/CreateResume";
 import SignOut from "./components/SignOut";
 
 function App() {
+  // Define state for resume items - user details
+  const [resume, setResume] = useState([])
+
   return (
     <div>
       <NavBar />
       <Routes>
         <Route exact path="/signin" element={<SignIn />} />
 
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home resume={resume} />} />
 
-        <Route exact path="/createresume" element={<CreateResume />} />
+        <Route
+          exact
+          path="/createresume"
+          element={<CreateResume resume={resume} setResume={setResume}/>}
+        />
 
         <Route exact path="/signout" element={<SignOut />} />
       </Routes>
