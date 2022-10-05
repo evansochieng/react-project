@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DisplayResume(resume) {
+function DisplayResume({resume}) {
   return (
     <div>
         <h2>{resume.name}</h2>
