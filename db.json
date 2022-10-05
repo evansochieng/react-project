@@ -1,5 +1,15 @@
 {
   "resumes": [
-    
+    {
+      "about": "I am under pressure",
+      "name": "Evans Ochieng",
+      "email": "evansochieng121@gmail.com",
+      "github": "evansochieng",
+      "education": "Primary School boy",
+      "skills": "Sleeping",
+      "experience": "2 years",
+      "projects": "Nothing to show",
+      "id": 1
+    }
   ]
 }

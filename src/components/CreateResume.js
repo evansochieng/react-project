@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CreateResume() {
+function CreateResume({ addNewResume }) {
     // Define state for resume details
     const [resumeItems, setResumeItems] = useState({
         about: '',
@@ -35,7 +35,7 @@ function CreateResume() {
       body: JSON.stringify(resumeItems),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => addNewResume(data));
 
     // Reset the input boxes
     setResumeItems({

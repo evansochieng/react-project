@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home() {
+function Home({ resumes }) {
 
     // fetch the data from the api depending on the user input
     
