@@ -26,8 +26,29 @@ function CreateResume() {
     event.preventDefault();
 
     // make a POST request to add the resume details to the API
-    
-  }  
+    fetch("http://localhost:8000/resumes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accepted: "application/json",
+      },
+      body: JSON.stringify(resumeItems),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+
+    // Reset the input boxes
+    setResumeItems({
+      about: "",
+      name: "",
+      email: "",
+      github: "",
+      education: "",
+      skills: "",
+      experience: "",
+      projects: "",
+    });
+  } 
 
   return (
     <div>
