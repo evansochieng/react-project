@@ -12,7 +12,7 @@ function CreateResume() {
         </div>
 
         {/* Contact details: official name, githubUsername, phone, email */}
-        <div className="contact">
+        <div className="flex flex-col ...">
           <h3>Contact Details</h3>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" />
