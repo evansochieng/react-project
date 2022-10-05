@@ -3,7 +3,7 @@ import React from "react";
 function SignIn() {
   return (
     <div>
-      <form className="flex-1">
+      <form className="flex-1" style={{}}>
         <label htmlFor="username">Username: </label>
         <input type="text" name="username" id="username" />
 
