@@ -19,7 +19,7 @@ function App() {
   }
 
   return (
-    <div style={{justifyContent: 'center'}}>
+    <div style={{justifyContent: 'center', width: '100px'}}>
       <NavBar />
       <Routes>
         <Route exact path="/signin" element={<SignIn />} />

@@ -39,11 +39,15 @@ function Home() {
     
     return (
       <>
-        <div>
-          <h1 style={{ display: "inline-block", textAlign: 'center' }}>
-            Welcome to Resume Builder Application
-          </h1>
-          <form onSubmit={(e) => searchResume(e)}>
+        <div
+          style={{
+            display: "inline-block",
+            textAlign: "center",
+            width: "1000px",
+          }}
+        >
+          <h1>Welcome to Resume Builder Application</h1>
+          <form style={{marginBottom: '10px'}} onSubmit={(e) => searchResume(e)}>
             <input
               type="text"
               placeholder="search resume"

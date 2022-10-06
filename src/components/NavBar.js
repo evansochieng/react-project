@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { GoHome } from 'react-icons/go';
 
 const linkStyles = {
   display: "inline-block",
@@ -25,7 +26,7 @@ function NavBar() {
         Sign In
       </NavLink>
       <NavLink to="/" exact="true" style={linkStyles}>
-        Home
+        <GoHome/> Home
       </NavLink>
       <NavLink to="/createresume" exact="true" style={linkStyles}>
         Create Resume

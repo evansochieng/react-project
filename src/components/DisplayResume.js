@@ -1,24 +1,50 @@
-import React from 'react'
+import React from 'react';
+import {
+  GoMarkGithub,
+  GoMail,
+  GoPerson,
+  GoMortarBoard,
+  GoOrganization,
+} from "react-icons/go";
+import { ImUserTie } from 'react-icons/im'
 
 function DisplayResume({resume}) {
   return (
-    <div style={{alignItems: 'center', backgroundColor: 'lightblue', padding: '40px', width: '400px'}}>
+    <div
+      style={{
+        display: "inline-block",
+        textAlign: "left",
+        alignItems: "left",
+        backgroundColor: "lightblue",
+        padding: "40px",
+        width: "600px",
+      }}
+    >
       <h2>{resume.name}</h2>
-      <br />
-      <h3 style={{ color: "#0284c7" }}>Personal Information</h3>
-      <li>Email: {resume.email}</li>
-      <li>Github Profile: {resume.github}</li>
+      <h3 style={{ color: "#0284c7" }}>
+        <GoPerson /> Personal Information
+      </h3>
+      <li>
+        <GoMail />: {resume.email}
+      </li>
+      <li>
+        <GoMarkGithub />: {resume.github}
+      </li>
       <br />
       <h3 style={{ color: "#0284c7" }}>About Myself</h3>
       <p>{resume.about}</p>
       <br />
-      <h3 style={{ color: "#0284c7" }}>Education</h3>
+      <h3 style={{ color: "#0284c7" }}>
+        <GoMortarBoard /> Education
+      </h3>
       <li>{resume.education}</li>
       <br />
       <h3 style={{ color: "#0284c7" }}>Skills and Abilities</h3>
       <li>{resume.skills}</li>
       <br />
-      <h3 style={{ color: "#0284c7" }}>Work and Experience</h3>
+      <h3 style={{ color: "#0284c7" }}>
+        <GoOrganization /> Work and Experience
+      </h3>
       <li>{resume.experience}</li>
       <br />
       <h3 style={{ color: "#0284c7" }}>Personal Projects</h3>
