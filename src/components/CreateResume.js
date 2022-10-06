@@ -53,21 +53,6 @@ function CreateResume({ addNewResume }) {
   return (
     <div>
       <form className="resume" onSubmit={(e) => createResume(e)}>
-        {/* Information about myself */}
-        <div
-          className="about"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
-        >
-          <h3>Information about myself</h3>
-          <label htmlFor="about">About Myself</label>
-          <input
-            type="text"
-            name="about"
-            value={resumeItems.about}
-            onChange={(e) => handleChange(e)}
-          />
-        </div>
-
         {/* Contact details: official name, githubUsername, phone, email */}
         <div
           style={{ display: "flex", flexDirection: "column", width: "1000px" }}
@@ -93,6 +78,21 @@ function CreateResume({ addNewResume }) {
             type="text"
             name="github"
             value={resumeItems.github}
+            onChange={(e) => handleChange(e)}
+          />
+        </div>
+
+        {/* Information about myself */}
+        <div
+          className="about"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
+          <h3>Information about myself</h3>
+          <label htmlFor="about">About Myself</label>
+          <input
+            type="text"
+            name="about"
+            value={resumeItems.about}
             onChange={(e) => handleChange(e)}
           />
         </div>

@@ -21,6 +21,17 @@
       "experience": "Since birth",
       "projects": "ComediCom",
       "id": 2
+    },
+    {
+      "about": "Am a student at Moringa blabla bla",
+      "name": "Dennis",
+      "email": "evans.ochieng@student.moringaschool.com",
+      "github": "denno",
+      "education": "KCSE graduate",
+      "skills": "SD",
+      "experience": "2",
+      "projects": "Matatu App",
+      "id": 3
     }
   ]
 }

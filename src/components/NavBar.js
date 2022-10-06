@@ -9,13 +9,14 @@ const linkStyles = {
   background: "rgb(12 74 110)",
   textDecoration: "none",
   color: "white",
+  borderRadius: '5px'
 };
 
 function NavBar() {
   return (
     <div
       style={{
-        background: "rgb(6 182 212)",
+        //background: "rgb(6 182 212)",
         width: "1000px",
         textAlign: "center",
       }}

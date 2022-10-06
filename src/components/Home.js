@@ -40,15 +40,27 @@ function Home() {
     return (
       <>
         <div>
-          <h1>Welcome to Resume Builder Application</h1>
+          <h1 style={{ display: "inline-block", textAlign: 'center' }}>
+            Welcome to Resume Builder Application
+          </h1>
           <form onSubmit={(e) => searchResume(e)}>
             <input
               type="text"
               placeholder="search resume"
               value={searchedName}
               onChange={(e) => grabUserInput(e)}
+              style={{ width: "200px" }}
             />
-            <button>Search</button>
+            <button
+              style={{
+                width: "100px",
+                marginLeft: "5px",
+                backgroundColor: "#7dd3fc",
+                borderRadius: "5px",
+              }}
+            >
+              Search
+            </button>
           </form>
 
           <div>
