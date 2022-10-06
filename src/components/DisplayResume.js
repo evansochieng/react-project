@@ -14,7 +14,6 @@ function DisplayResume({resume}) {
       style={{
         display: "inline-block",
         textAlign: "left",
-        alignItems: "left",
         backgroundColor: "lightblue",
         padding: "40px",
         width: "600px",

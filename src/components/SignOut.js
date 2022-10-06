@@ -10,10 +10,17 @@ function SignOut() {
     navigate("/signin");
   }
   return (
-    <>
+    <div
+      style={{
+        display: "inline-block",
+        textAlign: 'center',
+        padding: "40px",
+        width: "1000px",
+      }}
+    >
       <h3>Confirm signout</h3>
       <button onClick={logout}>SignOut</button>
-    </>
+    </div>
   );
 }
 
