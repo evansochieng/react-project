@@ -51,11 +51,19 @@ function CreateResume({ addNewResume }) {
   } 
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: "left",
+        width: "1000px",
+      }}
+    >
       <form className="resume" onSubmit={(e) => createResume(e)}>
         {/* Contact details: official name, githubUsername, phone, email */}
         <div
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Contact Details</h3>
           <label htmlFor="name">Name</label>
@@ -85,7 +93,7 @@ function CreateResume({ addNewResume }) {
         {/* Information about myself */}
         <div
           className="about"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Information about myself</h3>
           <label htmlFor="about">About Myself</label>
@@ -100,7 +108,7 @@ function CreateResume({ addNewResume }) {
         {/* Education */}
         <div
           className="education"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Academic Qualifications</h3>
           <label htmlFor="education">Academic Qualifications</label>
@@ -115,7 +123,7 @@ function CreateResume({ addNewResume }) {
         {/* Skills and Abilities */}
         <div
           className="skills"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Skills and Abilities</h3>
           <label htmlFor="skills">Skills</label>
@@ -131,7 +139,7 @@ function CreateResume({ addNewResume }) {
         {/* Work Experience */}
         <div
           className="experience"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Work Experience</h3>
           <label htmlFor="experience">Work Experience</label>
@@ -147,7 +155,7 @@ function CreateResume({ addNewResume }) {
         {/* Projects */}
         <div
           className="projects"
-          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+          style={{ display: "flex", flexDirection: "column", width: "600px" }}
         >
           <h3>Projects</h3>
           <label htmlFor="projects">Projects</label>
@@ -161,7 +169,7 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Submit button */}
-        <button>Create</button>
+        <button style={{marginTop: '10px', textAlign: 'center'}}>Create</button>
       </form>
     </div>
   );
