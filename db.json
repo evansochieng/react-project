@@ -10,6 +10,17 @@
       "experience": "2 years",
       "projects": "Nothing to show",
       "id": 1
+    },
+    {
+      "about": "Shit is happening",
+      "name": "Rusty Sabich",
+      "email": "evans.ochieng@student.moringaschool.com",
+      "github": "rusty",
+      "education": "Class 2 dropout",
+      "skills": "Comedy",
+      "experience": "Since birth",
+      "projects": "ComediCom",
+      "id": 2
     }
   ]
 }

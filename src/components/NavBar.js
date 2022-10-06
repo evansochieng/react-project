@@ -13,45 +13,23 @@ const linkStyles = {
 
 function NavBar() {
   return (
-    <div style={{ background: "rgb(6 182 212)", width: '1000px', textAlign: 'center'}}>
-      <NavLink
-        to="/signin"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+    <div
+      style={{
+        background: "rgb(6 182 212)",
+        width: "1000px",
+        textAlign: "center",
+      }}
+    >
+      <NavLink to="/signin" exact="true" style={linkStyles}>
         Sign In
       </NavLink>
-      <NavLink
-        to="/"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+      <NavLink to="/" exact="true" style={linkStyles}>
         Home
       </NavLink>
-      <NavLink
-        to="/createresume"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+      <NavLink to="/createresume" exact="true" style={linkStyles}>
         Create Resume
       </NavLink>
-      <NavLink
-        to="/signout"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
+      <NavLink to="/signout" exact="true" style={linkStyles}>
         Sign Out
       </NavLink>
     </div>
