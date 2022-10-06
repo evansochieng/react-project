@@ -47,7 +47,10 @@ function Home() {
           }}
         >
           <h1>Welcome to Resume Builder Application</h1>
-          <form style={{marginBottom: '10px'}} onSubmit={(e) => searchResume(e)}>
+          <form
+            style={{ marginBottom: "10px" }}
+            onSubmit={(e) => searchResume(e)}
+          >
             <input
               type="text"
               placeholder="search resume"
@@ -59,8 +62,9 @@ function Home() {
               style={{
                 width: "100px",
                 marginLeft: "5px",
-                backgroundColor: "#7dd3fc",
+                backgroundColor: "#0ea5e9",
                 borderRadius: "5px",
+                fontWeight: 'bold'
               }}
             >
               Search
