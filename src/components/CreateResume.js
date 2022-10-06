@@ -54,7 +54,10 @@ function CreateResume({ addNewResume }) {
     <div>
       <form className="resume" onSubmit={(e) => createResume(e)}>
         {/* Information about myself */}
-        <div className="about">
+        <div
+          className="about"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Information about myself</h3>
           <label htmlFor="about">About Myself</label>
           <input
@@ -66,7 +69,9 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Contact details: official name, githubUsername, phone, email */}
-        <div>
+        <div
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Contact Details</h3>
           <label htmlFor="name">Name</label>
           <input
@@ -93,7 +98,10 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Education */}
-        <div className="education">
+        <div
+          className="education"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Academic Qualifications</h3>
           <label htmlFor="education">Academic Qualifications</label>
           <input
@@ -105,7 +113,10 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Skills and Abilities */}
-        <div className="skills">
+        <div
+          className="skills"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Skills and Abilities</h3>
           <label htmlFor="skills">Skills</label>
           <input
@@ -118,7 +129,10 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Work Experience */}
-        <div className="experience">
+        <div
+          className="experience"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Work Experience</h3>
           <label htmlFor="experience">Work Experience</label>
           <input
@@ -131,7 +145,10 @@ function CreateResume({ addNewResume }) {
         </div>
 
         {/* Projects */}
-        <div className="projects">
+        <div
+          className="projects"
+          style={{ display: "flex", flexDirection: "column", width: "1000px" }}
+        >
           <h3>Projects</h3>
           <label htmlFor="projects">Projects</label>
           <input

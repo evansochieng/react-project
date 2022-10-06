@@ -40,25 +40,27 @@ function Home() {
     
     return (
       <>
-        <h1>Welcome to Resume Builder Application</h1>
-        <form onSubmit={(e) => searchResume(e)}>
-          <input
-            type="text"
-            placeholder="search resume"
-            value={searchedName}
-            onChange={(e) => grabUserInput(e)}
-          />
-          <button>Search</button>
-        </form>
-
         <div>
-          {matchingUser ? (
-            <DisplayResume resume={matchingUser} />
-          ) : (
-            <p>
-              <strong>You have no resume yet. Please create one...</strong>
-            </p>
-          )}
+          <h1>Welcome to Resume Builder Application</h1>
+          <form onSubmit={(e) => searchResume(e)}>
+            <input
+              type="text"
+              placeholder="search resume"
+              value={searchedName}
+              onChange={(e) => grabUserInput(e)}
+            />
+            <button>Search</button>
+          </form>
+
+          <div>
+            {matchingUser ? (
+              <DisplayResume resume={matchingUser} />
+            ) : (
+              <p>
+                <strong>You have no resume yet. Please create one...</strong>
+              </p>
+            )}
+          </div>
         </div>
       </>
     );
