@@ -29,12 +29,11 @@ function Home() {
               resume.name.split(" ").join("").toLowerCase() ===
               searchedName.split(" ").join("").toLowerCase()
           );
-
+          // Set matching user 
           setMatchingUser(searchedUser);
           
-          //Reset search box and matchingUser
+          //Reset search box value
           setSearchedName('');
-          setMatchingUser('');
         })
     }
     
