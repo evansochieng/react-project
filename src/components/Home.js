@@ -56,15 +56,16 @@ function Home() {
               placeholder="search resume"
               value={searchedName}
               onChange={(e) => grabUserInput(e)}
-              style={{ width: "200px" }}
+              style={{ width: "300px", height: "30px", borderRadius: "5px", fontSize: '20px' }}
             />
             <button
               style={{
                 width: "100px",
+                height: "30px",
                 marginLeft: "5px",
                 backgroundColor: "#0ea5e9",
                 borderRadius: "5px",
-                fontWeight: 'bold'
+                fontWeight: "bold",
               }}
             >
               Search
@@ -75,7 +76,7 @@ function Home() {
             {matchingUser ? (
               <DisplayResume resume={matchingUser} />
             ) : (
-              <p>
+              <p style={{marginTop: '50px', fontSize: '30px'}}>
                 <strong>You have no resume yet. Please create one...</strong>
               </p>
             )}
