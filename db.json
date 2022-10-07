@@ -32,6 +32,17 @@
       "experience": "2",
       "projects": "Matatu App",
       "id": 3
+    },
+    {
+      "about": "TM at Moringa",
+      "name": "Steve Otieno",
+      "email": "steve@gmail.com",
+      "github": "steveotieno",
+      "education": "Graduate",
+      "skills": "Software Development",
+      "experience": "5",
+      "projects": "Moringa school canvas",
+      "id": 4
     }
   ]
 }

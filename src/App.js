@@ -19,17 +19,24 @@ function App() {
   }
 
   return (
-    <div style={{justifyContent: 'center', width: '100px'}}>
+    <div
+      style={{
+        textAlign: "center",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "1000px",
+      }}
+    >
       <NavBar />
       <Routes>
         <Route exact path="/signin" element={<SignIn />} />
 
-        <Route exact path="/" element={<Home resumes={resumes}/>} />
+        <Route exact path="/" element={<Home resumes={resumes} />} />
 
         <Route
           exact
           path="/createresume"
-          element={<CreateResume addNewResume={addNewResume}/>}
+          element={<CreateResume addNewResume={addNewResume} />}
         />
 
         <Route exact path="/signout" element={<SignOut />} />

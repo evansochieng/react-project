@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import DisplayResume from "./DisplayResume";
 
+import resumeImg from "../resumeImg.jpg";
+
 function Home() {
     //define state for search item
     const [searchedName, setSearchedName] = useState('');
@@ -46,7 +48,15 @@ function Home() {
             width: "1000px",
           }}
         >
-          <h1>Welcome to Resume Builder Application</h1>
+          <div>
+            <h1>RESUME BUILDER</h1>
+            <img
+              src={resumeImg}
+              alt="START"
+              style={{ height: "200px", width: "400px" }}
+            />
+          </div>
+          <h3>Welcome to Resume Builder Application</h3>
           <form
             style={{ marginBottom: "10px" }}
             onSubmit={(e) => searchResume(e)}
@@ -56,7 +66,12 @@ function Home() {
               placeholder="search resume"
               value={searchedName}
               onChange={(e) => grabUserInput(e)}
-              style={{ width: "300px", height: "30px", borderRadius: "5px", fontSize: '20px' }}
+              style={{
+                width: "300px",
+                height: "30px",
+                borderRadius: "5px",
+                fontSize: "20px",
+              }}
             />
             <button
               style={{
@@ -76,7 +91,7 @@ function Home() {
             {matchingUser ? (
               <DisplayResume resume={matchingUser} />
             ) : (
-              <p style={{marginTop: '50px', fontSize: '30px'}}>
+              <p style={{ marginTop: "50px", fontSize: "30px" }}>
                 <strong>You have no resume yet. Please create one...</strong>
               </p>
             )}
