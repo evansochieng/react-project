@@ -31,7 +31,7 @@ function CreateResume({ addNewResume }) {
     event.preventDefault();
 
     // make a POST request to add the resume details to the API
-    fetch("http://localhost:8000/resumes", {
+    fetch(`${process.env.REACT_APP_API_URL}/resumes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

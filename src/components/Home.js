@@ -19,24 +19,23 @@ function Home() {
     function searchResume(event){
         event.preventDefault();
 
-        {
-          /* fetch the data from the api depending on the user input */
-        }
-        fetch("http://localhost:8000/resumes")
-        .then(resp => resp.json())
-        .then(resumes => {
-          // Match searched user with appropriate resume
-          const searchedUser = resumes.find(
-            (resume) =>
-              resume.name.split(" ").join("").toLowerCase() ===
-              searchedName.split(" ").join("").toLowerCase()
-          );
-          // Set matching user 
-          setMatchingUser(searchedUser);
-          
-          //Reset search box value
-          setSearchedName('');
-        })
+        /* fetch the data from the api depending on the user input */
+        
+        fetch(`${process.env.REACT_APP_API_URL}/resumes`)
+          .then((resp) => resp.json())
+          .then((resumes) => {
+            // Match searched user with appropriate resume
+            const searchedUser = resumes.find(
+              (resume) =>
+                resume.name.split(" ").join("").toLowerCase() ===
+                searchedName.split(" ").join("").toLowerCase()
+            );
+            // Set matching user
+            setMatchingUser(searchedUser);
+
+            //Reset search box value
+            setSearchedName("");
+          });
     }
     
     return (
