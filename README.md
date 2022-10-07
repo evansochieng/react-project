@@ -1,3 +1,41 @@
+# RESUME BUILDER APPLICATION
+
+## Introduction
+Job-seekers always face a challenge of creating a simple resume just to meet the requirements of a specific job interview. This inspired me to come up with a simple app to help create resumes just to meet the purpose at hand.
+
+## Project Description
+This is a React project to assist job-seekers build a simple, yet fancy portfolio with just the main details of a resume in a few minutes. With a few inputs, you'll have your job-specific resume.
+
+## MVP
+1. 4 tabs on the navigation bar
+2. SignIn page
+3. Home page where already created resume will show on search
+4. Create resume page that allows user create their resume
+5. SignOut page
+
+## User stories
+1. As a user I should be able to sign in to the application, and be redirected to the home page.
+2. As a user I should be able to search my resume in home page. If I already craeted one, I should see it displayed on the home page. Otherwise, I should be notified to create one first.
+3. As a user, I should be able to create my resume on the Create Resume page.
+4. As a user, I should be able sign out of the application. However, I should first be prompted to confirm my logging out.
+
+## Project Guide
+### 1. Sign in
+Enter your username and password and click signin. You'll be redirected to home page.
+
+### 2. Search resume
+On the home page, you can search for already created resumes using the name of the user. The resume matching the name will be displayed. 
+*Note: You should not worry about letter case or space between the names. As long as your input matches some name, you'll have your resume displayed.*
+
+### 3. Create resume
+On the Create Resume page, you should be able to provide values for the different fields of the resume. On submit, you should be notified that your resume was created successfully and be redirected to the home page. Here, you can now search for your resume and have it displayed.
+
+### 4. Sign out
+When you click the sign out tab, you will be prompted to confirm that you really want to sign out. If you want to sign out, click 'YES, sign out' button, which will redirect you to the sign in page. Otherwise, click 'Cancel' to remain in the app; you'll be redirected to the home page.
+
+## Conclusion
+This is just a simple application to assist create basic resume. Overtime, I will be adding more functionalities to it, for example adding more skills in a user friendly way.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
