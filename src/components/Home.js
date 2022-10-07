@@ -21,7 +21,7 @@ function Home() {
 
         /* fetch the data from the api depending on the user input */
         
-        fetch(`${process.env.REACT_APP_API_URL}/resumes`)
+        fetch("https://my-json-server-datab.herokuapp.com/resumes")
           .then((resp) => resp.json())
           .then((resumes) => {
             // Match searched user with appropriate resume

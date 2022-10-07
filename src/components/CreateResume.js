@@ -31,7 +31,7 @@ function CreateResume({ addNewResume }) {
     event.preventDefault();
 
     // make a POST request to add the resume details to the API
-    fetch(`${process.env.REACT_APP_API_URL}/resumes`, {
+    fetch("https://my-json-server-datab.herokuapp.com/resumes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
