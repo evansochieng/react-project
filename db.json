@@ -4,67 +4,14 @@
       "about": "I am under pressure",
       "name": "Evans Ochieng",
       "email": "evansochieng121@gmail.com",
+      "number": "+254704999704",
       "github": "evansochieng",
-      "education": "Primary School boy",
-      "skills": "Sleeping",
-      "experience": "2 years",
-      "projects": "Nothing to show",
-      "id": 1
-    },
-    {
-      "about": "Shit is happening",
-      "name": "Rusty Sabich",
-      "email": "evans.ochieng@student.moringaschool.com",
-      "github": "rusty",
-      "education": "Class 2 dropout",
-      "skills": "Comedy",
-      "experience": "Since birth",
-      "projects": "ComediCom",
-      "id": 2
-    },
-    {
-      "about": "Am a student at Moringa blabla bla",
-      "name": "Dennis",
-      "email": "evans.ochieng@student.moringaschool.com",
-      "github": "denno",
-      "education": "KCSE graduate",
-      "skills": "SD",
-      "experience": "2",
-      "projects": "Matatu App",
-      "id": 3
-    },
-    {
-      "about": "TM at Moringa",
-      "name": "Steve Otieno",
-      "email": "steve@gmail.com",
-      "github": "steveotieno",
-      "education": "Graduate",
-      "skills": "Software Development",
-      "experience": "5",
-      "projects": "Moringa school canvas",
-      "id": 4
-    },
-    {
-      "about": "Honest till death",
-      "name": "Martin Omollo",
-      "email": "omollo@gmail.com",
-      "github": "martinomollo",
+      "image": "https://th.bing.com/th/id/OIP.Bx99qhav7ecrDrYrGzuZXgHaE8?pid=ImgDet&rs=1",
       "education": "Moringa student",
-      "skills": "Python programming",
-      "experience": "6 months",
-      "projects": "Eatery app",
-      "id": 5
-    },
-    {
-      "about": "Sijijui walai",
-      "name": "Classic Lanzhou Ramen",
-      "email": "ramen@gmail.com",
-      "github": "ramenclassic",
-      "education": "Class 2 dropout",
-      "skills": "Sleeping",
-      "experience": "1 year",
-      "projects": "Food app",
-      "id": 6
+      "skills": "Software Development",
+      "experience": "2 years",
+      "projects": "Matatu App",
+      "id": 1
     }
   ]
 }

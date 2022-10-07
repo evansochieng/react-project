@@ -9,7 +9,9 @@ function CreateResume({ addNewResume }) {
         about: '',
         name: '',
         email: '',
+        number: '',
         github: '',
+        image: '',
         education: '',
         skills: '',
         experience: '',
@@ -45,7 +47,9 @@ function CreateResume({ addNewResume }) {
       about: "",
       name: "",
       email: "",
+      number: "",
       github: "",
+      image: "",
       education: "",
       skills: "",
       experience: "",
@@ -121,6 +125,29 @@ function CreateResume({ addNewResume }) {
             }}
           />
           <label
+            htmlFor="number"
+            style={{
+              marginBottom: "3px",
+              fontWeight: "bold",
+              color: "#4d7c0f",
+            }}
+          >
+            Phone Number
+          </label>
+          <input
+            type="text"
+            name="number"
+            value={resumeItems.number}
+            onChange={(e) => handleChange(e)}
+            style={{
+              width: "400px",
+              height: "25px",
+              borderRadius: "5px",
+              fontSize: "20px",
+              marginBottom: "3px",
+            }}
+          />
+          <label
             htmlFor="github"
             style={{
               marginBottom: "3px",
@@ -134,6 +161,29 @@ function CreateResume({ addNewResume }) {
             type="text"
             name="github"
             value={resumeItems.github}
+            onChange={(e) => handleChange(e)}
+            style={{
+              width: "400px",
+              height: "25px",
+              borderRadius: "5px",
+              fontSize: "20px",
+              marginBottom: "3px",
+            }}
+          />
+          <label
+            htmlFor="image"
+            style={{
+              marginBottom: "3px",
+              fontWeight: "bold",
+              color: "#4d7c0f",
+            }}
+          >
+            Image URL
+          </label>
+          <input
+            type="text"
+            name="image"
+            value={resumeItems.image}
             onChange={(e) => handleChange(e)}
             style={{
               width: "400px",
