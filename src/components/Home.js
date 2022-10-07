@@ -19,7 +19,7 @@ function Home() {
     function searchResume(event){
         event.preventDefault();
 
-        /* fetch the data from the api depending on the user input */
+        /* fetch the data from the api depending on the user input. Using env variables causing errors*/
         
         fetch("https://my-json-server-datab.herokuapp.com/resumes")
           .then((resp) => resp.json())
