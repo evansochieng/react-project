@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function CreateResume({ addNewResume }) {
+  // Define navigate hook for redirection
+  const navigate = useNavigate();
     // Define state for resume details
     const [resumeItems, setResumeItems] = useState({
         about: '',
@@ -48,7 +51,11 @@ function CreateResume({ addNewResume }) {
       experience: "",
       projects: "",
     });
-  } 
+
+    // Navigate to home page
+    alert('Resume created successfully')
+    navigate('/')
+  }
 
   return (
     <div

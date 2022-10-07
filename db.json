@@ -43,6 +43,28 @@
       "experience": "5",
       "projects": "Moringa school canvas",
       "id": 4
+    },
+    {
+      "about": "Honest till death",
+      "name": "Martin Omollo",
+      "email": "omollo@gmail.com",
+      "github": "martinomollo",
+      "education": "Moringa student",
+      "skills": "Python programming",
+      "experience": "6 months",
+      "projects": "Eatery app",
+      "id": 5
+    },
+    {
+      "about": "Sijijui walai",
+      "name": "Classic Lanzhou Ramen",
+      "email": "ramen@gmail.com",
+      "github": "ramenclassic",
+      "education": "Class 2 dropout",
+      "skills": "Sleeping",
+      "experience": "1 year",
+      "projects": "Food app",
+      "id": 6
     }
   ]
 }
